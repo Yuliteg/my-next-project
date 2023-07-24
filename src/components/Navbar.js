@@ -23,10 +23,23 @@ const Navbar = () => {
           <Link
             className={`${
               link.path === pathname && "text-accent"
-            } relative flex items-center hover:text-accent`}
+            } relative flex items-center group hover:text-accent transition-all duration-300`}
             key={index}
             href={link.path}
           >
+            <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
+              <div className="bg-white relative flex text-primary items-center p-[6px] rounded-[3px]">
+                <div className="text-[12px] capitalize leading-none font-semibold">
+                  {link.name}
+                </div>
+
+                <div
+                  className="border-solid border-l-white border-l-8 border-y-transparent
+              border-y-[6px] border-r-0 absolute -right-2
+              "
+                ></div>
+              </div>
+            </div>
             <div>{link.icon}</div>
           </Link>
         ))}

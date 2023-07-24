@@ -12,7 +12,7 @@ module.exports = {
       },
     },
     screens: {
-      sm: "640px",
+      sm: "500px",
       md: "768px",
       lg: "960px",
       xl: "1200px",
@@ -24,7 +24,7 @@ module.exports = {
         accent: "#ff9100",
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
+        mainImg: 'url("/assets/ORSJP10.jpg")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/assets/bg.jpg")',

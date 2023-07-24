@@ -2,6 +2,7 @@ import "./globals.css";
 import { Sora } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import ImageAbsolute from "@/components/ImageAbsolute";
+import Header from "@/components/Header";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
     `}
         >
           <Navbar />
+          <Header />
           <ImageAbsolute imageSrc="/assets/kindpng_821901.png" />
           {children}
         </div>
