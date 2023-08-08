@@ -6,6 +6,7 @@ import Image from "next/image";
 import Title from "@/components/Title";
 import Description from "@/components/Description";
 import { descContent } from "@/libs/data";
+import AnimatedParticles from "@/components/AnimatedParticles";
 
 export default function Home() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -35,6 +36,9 @@ export default function Home() {
         </div>
 
         <div className="sm:hidden xl:block w-[800px] h-full absolute right-0 bottom-0">
+          <div className="w-[1000px] h-full absolute left-[-200px] bottom-0">
+            <AnimatedParticles width={1000} />
+          </div>
           <div>
             <Avatar />
           </div>

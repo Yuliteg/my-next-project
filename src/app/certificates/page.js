@@ -1,7 +1,12 @@
-import React from 'react'
+import AnimatedParticles from "@/components/AnimatedParticles";
+import React from "react";
 
 const Certificates = () => {
-  return <div>Certificates</div>;
-}
+  return (
+    <div>
+      <AnimatedParticles />
+    </div>
+  );
+};
 
-export default Certificates
+export default Certificates;
