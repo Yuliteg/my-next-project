@@ -10,6 +10,8 @@ const Avatar = () => {
         width={800}
         height={800}
         unoptimized={true}
+        priority
+        loading="eager"
       />
     </div>
   );

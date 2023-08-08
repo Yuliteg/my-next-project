@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <Header />
           <ImageAbsolute imageSrc="/assets/kindpng_821901.png" />
-          {children}
+          <div className="bg-primary/40 h-full">{children}</div>
         </div>
       </body>
     </html>

@@ -1,12 +1,17 @@
+import Image from "next/image";
 import React from "react";
 
 const ImageComponent = ({ imageSrc }) => {
   return (
-    <div className="absolute left-[-10px] top-[-30px] z-10 w-[80px] xl:w-[130px]">
-      <img
+    <div
+      className="absolute left-[-10px] top-[-30px] z-10"
+      style={{ filter: "hue-rotate(100deg)" }}
+    >
+      <Image
         src={imageSrc}
         alt="blob-image"
-        style={{ filter: "hue-rotate(100deg)" }}
+        width={140}
+        height={140}
       />
     </div>
   );

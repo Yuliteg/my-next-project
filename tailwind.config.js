@@ -24,7 +24,7 @@ module.exports = {
         accent: "#ff9100",
       },
       backgroundImage: {
-        mainImg: 'url("/assets/ORSJP10.jpg")',
+        mainImg: 'url("/assets/pngwing.png")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/assets/bg.jpg")',

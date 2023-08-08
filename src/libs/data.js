@@ -23,3 +23,11 @@ export const links = [
     icon: <HiEnvelope />,
   },
 ];
+
+export const descContent = `
+  Here, I share all my completed projects, certificates, and contact
+  details. You can explore my diverse range of front-end development
+  projects and check out the certifications I've earned. If you'd like
+  to get in touch, feel free to reach out to me using the contact
+  information.
+`;
