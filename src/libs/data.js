@@ -6,8 +6,12 @@ import {
   HiEnvelope,
 } from "react-icons/hi2";
 import { PiCertificateFill } from "react-icons/pi";
+import { SiCodewars } from "react-icons/si";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithubAlt } from "react-icons/fa";
+
 //  links
-export const links = [
+export const navLinks = [
   { name: "home", path: "/", icon: <HiHome /> },
   { name: "about", path: "/about", icon: <HiUser /> },
   { name: "services", path: "/services", icon: <HiRectangleGroup /> },
@@ -31,3 +35,21 @@ export const descContent = `
   to get in touch, feel free to reach out to me using the contact
   information.
 `;
+
+const socialLinks = [
+  {
+    name: "linkedin",
+    icon: <BsLinkedin />,
+    link: "https://www.linkedin.com/in/yulia-fedchenko-441a15244/",
+  },
+  {
+    name: "github",
+    icon: <FaGithubAlt />,
+    link: "https://github.com/Yuliteg",
+  },
+  {
+    name: "codewars",
+    icon: <SiCodewars />,
+    link: "https://www.codewars.com/users/y.ekler1",
+  },
+];

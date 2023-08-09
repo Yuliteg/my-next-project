@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useEffect, useState } from "react";
 import AnimatedButton from "@/components/AnimatedButton";
 import Avatar from "@/components/Avatar";
@@ -9,11 +9,6 @@ import { descContent } from "@/libs/data";
 import AnimatedParticles from "@/components/AnimatedParticles";
 
 export default function Home() {
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
-  };
 
   return (
     <div
@@ -31,20 +26,20 @@ export default function Home() {
           showExploreText={true}
         />
         <Description content={descContent} />
-        <div className="flex justify-center relative xl:max-w-[576px]">
+        <div className="flex justify-center relative xl:max-w-[576px] z-10">
           <AnimatedButton />
         </div>
 
-        <div className="sm:hidden xl:block w-[800px] h-full absolute right-0 bottom-0">
+        <div className="xl:block w-[800px] h-full absolute right-0 bottom-0">
           <div className="w-[1000px] h-full absolute left-[-200px] bottom-0">
             <AnimatedParticles width={1000} />
           </div>
-          <div>
+          <div className="sm:hidden xl:block">
             <Avatar />
           </div>
           <div
             className={`bg-mainImg xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full
-            absolute translate-z-0`}
+            absolute translate-z-0 sm:hidden xl:block hidden`}
           ></div>
         </div>
       </div>
