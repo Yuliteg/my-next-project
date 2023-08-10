@@ -19,7 +19,7 @@ const Navbar = () => {
       xl:rounded-full
       "
       >
-        {links.map((link, index) => (
+        {navLinks.map((link, index) => (
           <Link
             className={`${
               link.path === pathname && "text-accent"

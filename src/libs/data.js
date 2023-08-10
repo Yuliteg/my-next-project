@@ -8,7 +8,8 @@ import {
 import { PiCertificateFill } from "react-icons/pi";
 import { SiCodewars } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithubAlt } from "react-icons/fa";
+import { FaGithubAlt, FaGithubSquare } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 //  links
 export const navLinks = [
@@ -36,7 +37,7 @@ export const descContent = `
   information.
 `;
 
-const socialLinks = [
+export const socialLinks = [
   {
     name: "linkedin",
     icon: <BsLinkedin />,
@@ -44,7 +45,7 @@ const socialLinks = [
   },
   {
     name: "github",
-    icon: <FaGithubAlt />,
+    icon: <AiFillGithub />,
     link: "https://github.com/Yuliteg",
   },
   {
