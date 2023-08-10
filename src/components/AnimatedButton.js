@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { HiArrowRight } from "react-icons/hi2";
 
@@ -12,10 +12,11 @@ const AnimatedButton = () => {
       >
         <Image
           src={"/assets/circleText.png"}
-          width={141}
-          height={148}
+          width={180}
+          height={180}
           alt="circle-text-img"
           className="animate-spin-slow w-full h-full max-w[141] max-h-[178px]"
+          priority={true}
         />
         <p className="absolute ">My projects</p>
       </Link>

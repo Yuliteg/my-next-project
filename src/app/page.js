@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import AnimatedButton from "@/components/AnimatedButton";
 import Avatar from "@/components/Avatar";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Title from "@/components/Title";
 import Description from "@/components/Description";
 import { descContent } from "@/libs/data";
