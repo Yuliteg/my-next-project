@@ -1,13 +1,14 @@
-import "./globals.css";
 import { Sora } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import ImageAbsolute from "@/components/ImageAbsolute";
 import Header from "@/components/Header";
 
+import "./globals.css";
+
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {

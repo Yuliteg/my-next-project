@@ -1,15 +1,14 @@
-"use client"
-import { useEffect, useState } from "react";
-import AnimatedButton from "@/components/AnimatedButton";
+import { lazy, Suspense } from "react";
 import Avatar from "@/components/Avatar";
 import Image from "next/legacy/image";
 import Title from "@/components/Title";
 import Description from "@/components/Description";
 import { descContent } from "@/libs/data";
-import AnimatedParticles from "@/components/AnimatedParticles";
+
+// const AnimatedParticles = lazy(() => import("@/components/AnimatedParticles"));
+const AnimatedButton = lazy(() => import("@/components/AnimatedButton"));
 
 export default function Home() {
-
   return (
     <div
       className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30
@@ -27,12 +26,16 @@ export default function Home() {
         />
         <Description content={descContent} />
         <div className="flex justify-center relative xl:max-w-[576px] z-10">
-          <AnimatedButton />
+          <Suspense fallback={<div></div>}>
+            <AnimatedButton />
+          </Suspense>
         </div>
 
         <div className="xl:block w-[800px] h-full absolute right-0 bottom-0">
           <div className="w-[1000px] h-full absolute left-[-200px] bottom-0">
-            <AnimatedParticles width={1000} />
+            <Suspense fallback={<div></div>}>
+              {/* <AnimatedParticles width={1000} /> */}
+            </Suspense>
           </div>
           <div className="sm:hidden xl:block">
             <Avatar />

@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex flex-col sm:flex-row xl:justify-start lg:flex-grow justify-between items-center xl:pt-6 sm:gap-x-7 xl:gap-y-7 xl:gap-x-7">
           <Link href={"/"}>
             <div
-              style={{ position: "relative", width: "110px", height: "110px" }}
+              style={{ position: "relative", width: "100px", height: "100px" }}
             >
               <Image
                 src={"/logo (2).png"}

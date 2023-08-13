@@ -23,7 +23,7 @@ const Navbar = () => {
           <Link
             className={`${
               link.path === pathname && "text-accent"
-            } relative flex items-center group hover:text-accent transition-all duration-300`}
+            } relative flex items-center group hover:text-accent transition-all duration-100`}
             key={index}
             href={link.path}
           >

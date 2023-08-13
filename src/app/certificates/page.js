@@ -1,12 +1,7 @@
-import AnimatedParticles from "@/components/AnimatedParticles";
 import React from "react";
 
 const Certificates = () => {
-  return (
-    <div>
-      <AnimatedParticles />
-    </div>
-  );
+  return <div>Certificates</div>;
 };
 
 export default Certificates;
