@@ -10,16 +10,14 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex flex-col sm:flex-row xl:justify-start lg:flex-grow justify-between items-center xl:pt-6 sm:gap-x-7 xl:gap-y-7 xl:gap-x-7">
           <Link href={"/"}>
-            <div
-              style={{ position: "relative", width: "100px", height: "100px" }}
-            >
+            <div className="relative w-20 h-20 xl:w-24 xl:h-24">
               <Image
                 src={"/logo (2).png"}
                 alt="logo-img"
                 layout="fill"
                 objectFit="cover"
                 priority={true}
-                style={{ zIndex: 1 }}
+                className="z-1"
               />
             </div>
           </Link>

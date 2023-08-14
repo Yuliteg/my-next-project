@@ -1,6 +1,6 @@
 import { Sora } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import ImageAbsolute from "@/components/ImageAbsolute";
+import AbsoluteImage from "@/components/AbsoluteImage";
 import Header from "@/components/Header";
 
 import "./globals.css";
@@ -22,12 +22,17 @@ export default function RootLayout({ children }) {
       <body>
         <div
           className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable}
-    font-sora relative
+    font-sora relative 
     `}
         >
           <Navbar />
           <Header />
-          <ImageAbsolute imageSrc="/assets/kindpng_821901.png" />
+          <AbsoluteImage
+            imageSrc="/assets/kindpng_821901.png"
+            width={110}
+            height={110}
+            className="top-[-45px] left-[-20px]"
+          />
           <div className="bg-primary/40 h-full">{children}</div>
         </div>
       </body>

@@ -6,11 +6,9 @@ const Avatar = () => {
       <Image
         src={"/assets/mainImg1.png"}
         alt="avatar-img"
-        className="translate-z-0"
         width={800}
         height={800}
         unoptimized={true}
-        priority
         loading="eager"
       />
     </div>
